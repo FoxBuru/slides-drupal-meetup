@@ -3,3 +3,10 @@
    background: transparent;
    box-shadow: none;
 }
+
+.reveal .slides section .fragment{
+   font-size: 70%;
+}
+.reveal section p {
+   text-align:justify;
+}

@@ -1,81 +1,484 @@
 <!doctype html>
 <html lang="en">
 
-   <head>
-      <meta charset="utf-8">
+	<head>
+		<meta charset="utf-8">
 
-      <title>reveal.js - The HTML Presentation Framework</title>
+		<title>reveal.js - The HTML Presentation Framework</title>
 
-      <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-      <meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
 
-      <meta name="apple-mobile-web-app-capable" content="yes" />
-      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-      <link rel="stylesheet" href="reveal.js-master/css/reveal.min.css">
-      <link rel="stylesheet" href="reveal.js-master/css/theme/beige.css" id="theme">
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
+		<link rel="stylesheet" href="css/softlitemx.css">
 
-      <!-- For syntax highlighting -->
-      <link rel="stylesheet" href="reveal.js-master/lib/css/zenburn.css">
-      <link rel="stylesheet" href="css/softlitemx.css">
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
 
-      <!-- If the query includes 'print-pdf', use the PDF print sheet -->
-      <script>
-         document.write( '<link rel="stylesheet" href="reveal.js-master/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-      </script>
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
 
-      <!--[if lt IE 9]>
-      <script src="reveal.js-master/lib/js/html5shiv.js"></script>
-      <![endif]-->
-   </head>
-   <body>
-      <div class="reveal">
-         
-         <!-- Any section element inside of this container is displayed as a slide -->
-         <div class="slides">
-            <section>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
                <img src="images/druplicon.png">
-               <h1>Drupal MeetUp</h1>
-               <h3>The best CMS for your web sites</h3>
-               <p>
-                  <small>Created by <a href="http://hakim.se">Softlitemx</a> / <a href="http://twitter.com/softlitemx">@softlitemx</a></small>
-               </p>
-            </section> 
+					<h1>Drupal MeetUp</h1>
+					<h3>The Best CMS for build your Websites and more...</h3>
+					<p>
+				   <small>Created by <a href="http://hakim.se">Softlite Solutions</a> / <a href="http://twitter.com/hakimel">@softlitemx</a></small>
+					</p>
+				</section>
             <section>
                <img src="images/manuel.jpg">
+               <p>Drupalero, Mobile Developer y Linuxero :D</p>
+               <p>
+                  <i><small>- <a href="http://www.softlite.mx" class="roll"><span data-title="Softlite Solutions">Softlite Solutions</span></a> / <a href="http://twitter.com/softlitem" class="roll"><span data-title="@softlitem">@softlitem</span></a>/ Drupal ID: <a href="http://groups.drupal.org/user/880704" class="roll"><span data-title="manueler">manueler</span></a></small></i>
+               </p> 
             </section>
-        </div>
-      </div>
+            <section>
+               <h1>¿Pero que ... hago aqu&iacute;?</h1>
+               <small>Compartiremos, discutiremos y fortaleceremos la comunidad Drupalera en M&eacute;xico</small>
+               <small><i>En este evento(Slides), se dará una introducción al poderoso CMS Drupal</i></small>
+            </section>
+            <section style="display: block;" class="stack present">
+               <section style="display: block;" class="present">
+                  <img src="images/drupal.png">
+                  <h2>¿Qué es Drupal?</h2>
+            <ul>
+              <li class="fragment">Es un sistema de gestión de contenido(CMS) modular multipropósito y muy configurable.</li>
+              <li class="fragment">Originalmente fue Escrito por: <a href="http://es.wikipedia.org/wiki/Dries_Buytaert" class="roll"><span data-title="Dries Buytaert">Dries Buytaert</span></a>.</li>
+              <li class="fragment">La característica principal de Drupal es su Comunidad en todo el mundo.</li>
+              <li class="fragment">Claro! es Software Libre \m/ protegido por Licencia <a href="http://es.wikipedia.org/wiki/Licencia_p%C3%BAblica_general_de_GNU" class="roll"><span data-title="GPLv2/GPLv3">GPLv2/GPLv3</span></a>.</li>
+            </ul>
+               </section>
+               <section>
+                  <h2>M&oacute;dulos</h2>
+                  <div>El módulo (module) es un software que extiende las funcionalidades y/o características de Drupal. Viene con módulos precargados según la versión, a los cuales se les puede añadir los que se necesite según la funcionalidad que tenga el sitio.</div>
+               </section>
+               <section style="display: block;" class="future">
+                  <h2>Módulos</h2>
+                  <img src="images/the-periodic-table-of-drupal-modules.jpg">
+               </section>
+               <section>
+                  <h2>Nodo</h2>
+                  <div>El Nodo (node) es un término genérico para cada pieza de contenido del sitio. Algunos ejemplos de nodos pueden ser: páginas en libros, temas de discusión en foros, entradas en blogs, nuevos artículos, etc. Cada nodo será un <b>tipo de contenido</b> que tendrá un ID, un título, una fecha de creación, un autor, un cuerpo o body y otras propiedades, también según qué otros módulos se encuentre usando agregará más propiedades a cada nodo.
+</div>
+               </section>
+               <section>
+                  <h2>Taxonomia</h2>
+                  <div>
+La Taxonomía (taxonomy) es el sistema mediante el cual Drupal clasifica el contenido y es uno de los módulos del núcleo de Drupal. Se pueden definir los vocabularios propios como grupos de términos de taxonomía. Cada tipo de vocabulario puede ser agregado como uno o más tipos de contenido y por ello, los nodos en el sitio pueden ser clasificados según agrupaciones en categorías, etiquetas o como cualquier cosa que se elija.
+</div>
+               </section>
+               <section>
+                  <h2>Region</h2>
+                  <p class="fragment">Drupal se encuentra dividido en Regiones (regions) que pueden incluir la cabecera, el pie, las barras laterales, la sección principal de contenido. </p>
+                  <h2 style="margin-top: 30px;">Bloque y Menus</h2>
+                  <p class="fragment">Los Bloques (blocks) es la información que se visualiza en las diferentes regiones, pudiendo tomar la forma de menús (como el menú de navegación) o visualizaciones de módulos (como los contenidos más vistos del foro) o información estática o dinámica que fue creada por un usuario (como eventos)</p>
+               </section>
+               <section style="display: block;" class="future">
+                  <h2>Comunidad</h2>
+                  <p>La característica principal de drupal es su cominidad que esta en constante crecimiento la comunidad latina ahora es:</p>
+                  <ul>
+                     <li>Nicaragua.</li>
+                     <li>Costarica.</li>
+                     <li>Panama.</li>
+                     <li>Colombia.</li>
+                     <li>Per&uacute;.</li>
+                     <li>Guatemala.</li>
+                     <li>Ecuador.</li>
+                     <li>Bolivia.</li>
+                     <li>Brazil.</li>
+                     <li><b>M&eacute;xico.</b></li>
+                  </ul>
+               </section>
+               <section>
+                  <h1>M&eacute;xico</h1>
+                  <p>Este MeetUp es un eventos de los m&aacute;s importantes en M&eacute;xico, ya que estamos siendo de los primeros en participar y hacer crecer la comunidad.</p>
+               </section>
+               <section>
+                  <h2>Guadalajara</h2>
+                  <p>Guadalajara fue en el primer estado donde se ha iniciado una comunidad fuerte en Drupal. Donde ha sido sede este año del: </p>
+                  <h2><a href="http://gdl2012.dlatino.org/" target="_blank">Drupal Summit Latino</a></h2>
+               </section>
+               <section>
+                  <h2>Foto reciente de la comunidad de centro Am&eacute;rica</h2>
+                  <img src="images/drupaleros.jpg">
+               </section>
+               
+            </section>
+				<section data-markdown>
+					<script type="text/template">
+						## Markdown support
 
-      <script src="reveal.js-master/lib/js/head.min.js"></script>
-      <script src="reveal.js-master/js/reveal.min.js"></script>
+						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
 
-      <script>
+							<section data-markdown>
+							  ## Markdown support
 
-         // Full list of configuration options available here:
-         // https://github.com/hakimel/reveal.js#configuration
-         Reveal.initialize({
-            controls: true,
-            progress: true,
-            history: true,
-            center: true,
+							  For those of you who like that sort of thing.
+							  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
+							</section>
+					</script>
+				</section>
+    <section>
+        <h1>drupal</h1>
+        <p>Template slide</p>
+    </section>
+    <section>
+        <section>
+            <h2>Instalacion de drupal (manual)</h2>
+            <div>
+                <img src="http://www.softlite.mx/imagesmeetup/installprofile.png">
+                <br>
+            </div>
+            <div>Seleccionamos Perfil de instalación</div>
+        </section>
+        <section>
+            <h2>Seleccionamos lenguaje</h2>
+            <div>
+                <img src="http://www.softlite.mx/imagesmeetup/languageinstall1.png">
+                <br>
+            </div>
+            <div>En este caso ocuparemos el que esta por default mas adelante configuraremos nuestro lenguaje</div>
+        </section>
+        <section>
+            <h2>Configuracion de nuestra db<img src="http://www.softlite.mx/imagesmeetup/dbconfig.png">
+            </h2>
+            <div>Colocamos los datos que nos pide y .......</div>
+        </section>
+        <section>
+            <h1>esperamos.......</h1>
+            <div>
+                <img src="http://www.softlite.mx/imagesmeetup/install.png">
+                <br>
+            </div>
+            <h6>
+                <br>
+            </h6>
+            <div>
+                <br>
+            </div>
+            <div>
+                <br>
+            </div>
+        </section>
+        <section>
+            <h2>Configuramos el sito</h2>
+            <div>Es momento de ajustar algunos&nbsp;</div>
+            <div>datos importantes como:</div>
+            <div>
+                <br>
+            </div>
+            <div>
+                <ul>
+                    <li>Nombre del sitio</li>
+                    <li>E-mail del sitio&nbsp;</li>
+                    <li>Nombre de Usuario (admin)</li>
+                    <li>Contraseña de Usuario (admin)</li>
+                </ul>
+                <div style="text-align: left;">
+                    <br>
+                </div>
+            </div>
+            <h2>guardamos y ........</h2>
+        </section>
+        <section>
+            <h1>" Listo "</h1>
+            <div>
+                <img src="http://profile.ak.fbcdn.net/hprofile-ak-snc6/187881_197212820324259_5887522_n.jpg">
+                <br>
+            </div>
+            <div>
+                <font face="Lato">Nuestro Drupal esta instalado ..</font>....</div>
+            </section>
+            <section>
+                <h2>
+                    <br>
+                </h2>
+                <div>
+                    <br>
+                </div>
+                <div>
+                    <br>
+                </div>
+                <h1>que hueva ¡¡¡</h1>
+            </section>
+            <section>
+                <h2>
+                    <h2 style="font: inherit;">INSTALACION DE DRUPAL (drush)</h2>
+                    <div>
+                        <font face="Lato">
+                            <span style="font-size: 36px; letter-spacing: normal; line-height: 43.20000076293945px; text-transform: none;">Que tedioso hacer tantos clicks y esperar,</span>
+                        </font>
+                    </div>
+                    <div>
+                        <font face="Lato">
+                            <span style="font-size: 36px; letter-spacing: normal; line-height: 43.20000076293945px; text-transform: none;">si podemos hacer este mismo procedimineto en</span>
+                        </font>
+                    </div>
+                    <div>
+                        <font face="Lato">
+                            <span style="font-size: 36px; letter-spacing: normal; line-height: 43.20000076293945px; text-transform: none;">menos pasos y menos tiempo, que haciéndolo&nbsp;</span>
+                        </font>
+                    </div>
+                    <div>
+                        <font face="Lato">
+                            <span style="font-size: 36px; letter-spacing: normal; line-height: 43.20000076293945px; text-transform: none;">de forma manual.</span>
+                        </font>
+                    </div>
+                    <div>
+                        <font face="Lato">
+                            <span style="font-size: 36px; letter-spacing: normal; line-height: 43.20000076293945px; text-transform: none;">
+                                <br>
+                            </span>
+                        </font>
+                    </div>
+                </h2>
+            </section>
+            <section>
+                <h2>que es drush</h2>
+                <div>Es una línea de comandos de shell y scripts de interfaz para Drupal, una verdadera navaja suiza diseñada para hacer la vida más fácil a nosotros los que acortamos horas de trabajo en la "BENDITA TERMINAL"</div>
+                <div>
+                    <img src="http://3wavesmedia.com/sites/default/files/drush.png">
+                    <br>
+                </div>
+            </section>
+            <section>
+                <h2>como consigo drush&nbsp;</h2>
+                <div>Lo unico que hay que hacer es entrar a: http://drupal.org/project/drush</div>
+                <div>
+                    <br>
+                </div>
+                <div>Seguir los sencillos pasos de instalación (segun mi SO) &nbsp; &nbsp; &nbsp; y dejar funcionando drush</div>
+                <div>
+                    <br>
+                </div>
+                <h2>regresando a nuestro asunto..&nbsp;</h2>
+                <div>
+                    <br>
+                </div>
+                <div>
+                    <br>
+                </div>
+                <div>
+                    <br>
+                </div>
+            </section>
+            <section>
+                <h2>comandos de instalacion de drupal (drush)</h2>
+                <div>Descargamos Drupal (drush dl drupal&nbsp;)</div>
+                <div>
+                    <br>
+                </div>
+                <div>
+                    <img src="http://www.softlite.mx/imagesmeetup/dldrupal.png">
+                    <br>
+                </div>
+            </section>
+            <section>
+                <h2>Instalamos (site install)</h2>
+                <pre>drush site-install standard --site-name="[nombre del sitio]" --site-mail="[mail del sitio]" --account-name=[nombre administrador] --account-pass=[pass administrador] --db-url=mysql://[usuario DB]:[passde usuario de la DB]@localhost/[nombre de la DB]</pre>
+                <p>
+                <img src="http://www.softlite.mx/imagesmeetup/siteinstall.png">
+                <br>
+            </p>
+        </section>
+        <section>
+            <h2>momento de ver nuestro sitio</h2>
+            <div>
+                <img src="http://www.softlite.mx/imagesmeetup/sitehome.png">
+                <br>
+            </div>
+        </section>
+    </section>
+    <section>
+        <section>
+            <h2>modulos</h2>
+<div>El módulo (module) es un software que extiende las funcionalidades y/o características de Drupal. Viene con módulos precargados según la versión, a los cuales se les puede añadir los que se necesite según la funcionalidad que tenga el sitio.</div>
+</section>
+            <section>
+                <h2>
+                    <img src="http://www.softlite.mx/imagesmeetup/build.jpg">
+                    <br>
+                </h2>
+                <div>Son las piezas para realizar nuestro poderoso sistema¡</div>
+                <div>
+                    <br>
+                </div>
+            </section>
+            <section>
+                <h2>algunos modulos que utilizaremos para nuestro sitio</h2>
+                <div>
+                    <ul>
+                        <li>Views</li>
+                        <li>Admin Menu</li>
+                        <li>ColorBox</li>
+                        <li>Media</li>
+                        <li>Localization update</li>
+                    </ul>
+                </div>
+                <div>
+                    <br>
+                </div>
+            </section>
+            <section>
+                <h2>Instalacion de modulos (manual)</h2>
+                <div>
+                    <ul>
+                        <li>Buscamos nuestro modulo<br>
+                        </li>
+                        <li>Descargamos</li>
+                        <li>Lo ponemos en nuestra carpeta de modulos</li>
+                        <li>Descomprimimos&nbsp;</li>
+                        <li>Lo activamos desde nuestro sitio</li>
+                        <li>Listo¡</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h2>instalacion de modulos (drush)</h2>
+                <div>
+                    <ul>
+                        <li>Descargamos nuestro modulo:</li>
+                    </ul>
+                    <br>
+                </div>
+                <div>drush dl [nombre de nuestro modulo]</div>
+                <div>
+                    <br>
+                </div>
+                <div>
+                    <ul>
+                        <li>Instalamos el modulo:</li>
+                    </ul>
+                    <br>
+                </div>
+                <div>drus en [nombre de nuestro modulo]</div>
+            </section>
+        </section>
+        <section>
+            <h2>Nodo</h2>
+<div>El Nodo (node) es un término genérico para cada pieza de contenido del sitio. Algunos ejemplos de nodos pueden ser: páginas en libros, temas de discusión en foros, entradas en blogs, nuevos artículos, etc. Cada nodo será un <b>tipo de contenido</b> que tendrá un ID, un título, una fecha de creación, un autor, un cuerpo o body y otras propiedades, también según qué otros módulos se encuentre usando agregará más propiedades a cada nodo.
+</div>
+</section>
+            <section>
+                <h2>Taxonomia</h2>
+<div>
+La Taxonomía (taxonomy) es el sistema mediante el cual Drupal clasifica el contenido y es uno de los módulos del núcleo de Drupal. Se pueden definir los vocabularios propios como grupos de términos de taxonomía. Cada tipo de vocabulario puede ser agregado como uno o más tipos de contenido y por ello, los nodos en el sitio pueden ser clasificados según agrupaciones en categorías, etiquetas o como cualquier cosa que se elija.
+</div>
+</section>
+                <section>
+                    <h2>region, bloque, menu</h2>
+<div>
+Drupal se encuentra dividido en Regiones (regions) que pueden incluir la cabecera, el pie, las barras laterales, la sección principal de contenido. Los Bloques (blocks) es la información que se visualiza en las diferentes regiones, pudiendo tomar la forma de menús (como el menú de navegación) o visualizaciones de módulos (como los contenidos más vistos del foro) o información estática o dinámica que fue creada por un usuario (como eventos).&nbsp;</div>
+</section>
+                    <section>
+                        <p>
+                        <br>
+                    </p>
+                    <p>
+                    <br>
+                </p>
+                <h1>menos platica !!!</h1>
+                <h1>mas accion !!!</h1>
+            </section>
+            
+            <section>
+                <h2>chido fcc</h2>
+                <div>Se trata del nuevo sitio para publicaciones de interes</div>
+                <div>estudiantil para los mejores alumnos de la mejor</div>
+                <div>facultad de este pais.</div>
+                <div>
+                    <br>
+                </div>
+                <h1>fcc buap</h1>
+            </section>
+            <section>
+                <h2>
+                    <br>
+                </h2>
+                <div>
+                    <br>
+                </div>
+                <div>
+                    <br>
+                </div>
+                <h1>GRACIAS !!!</h1>
+            </section>
+				<section>
+					<h2>Estos Slides est&aacute;n echo con: </h2>
+               <h1>reveal.js</h1>
+					<p>
+						reveal.js and <a href="http://www.rvl.io">rvl.io</a> are entirely free but if you'd like to support the projects you can donate below.
+						Donations will go towards hosting and domain costs.
+					</p>
+					<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+						<input type="hidden" name="cmd" value="_donations">
+						<input type="hidden" name="business" value="hakim.elhattab@gmail.com">
+						<input type="hidden" name="lc" value="US">
+						<input type="hidden" name="item_name" value="reveal.js / rvl.io">
+						<input type="hidden" name="no_note" value="0">
+						<input type="hidden" name="currency_code" value="USD">
+						<input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHostedGuest">
+						<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+					</form>
+				</section>
 
-            theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-            transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+				<section>
+					<h1>THE END</h1>
+					<h3>BY Hakim El Hattab / hakim.se</h3>
+				</section>
 
-            // Optional libraries used to extend on reveal.js
-            dependencies: [
-               { src: 'reveal.js-master/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-               { src: 'reveal.js-master/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-               { src: 'reveal.js-master/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-               { src: 'reveal.js-master/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-               { src: 'reveal.js-master/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-               { src: 'reveal.js-master/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-               // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
-            ]
-         });
+			</div>
 
-      </script>
+		</div>
 
-   </body>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
 </html>
